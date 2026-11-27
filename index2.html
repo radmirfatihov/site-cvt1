@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Фильмы/Телеканалы</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__logo">
+                <img src="img/sign.png" alt="logo">
+                <p class="header__logo-name">Видеосервис</p>
+            </div>
+            <form action="#">
+                <input class="header__search-txt" type="text" placeholder="Поиск...">
+                <input type="button" value="Найти">
+            </form>
+            <form action="#">
+                <input type="checkbox" id="authToggle" class="auth-open-btn" aria-label="Войти">
+            </form>
+        </header>
+        <main>
+            <nav class="nav">
+                <a class="nav__a" href="index1.html">Фильмы</a>
+                <a class="nav__a" href="#">Телеканалы</a>
+            </nav>
+            <div class="mainBlock">
+                <div class="mainBlock__first">
+                    <div class="mainBlock__first-tvLogo">
+                        <img class="mainBlock__first-img" src="img/1st.png" alt="firstChannelLogo">
+                    </div>
+                    <div class="mainBlock__first-tvScheduleOsn">
+                        <p class="mainBlock__first-tvScheduleChannelName">Первый Канал</p>
+                        <div class="mainBlock__first-tvSchedule">
+                            <p class="mainBlock__first-scheduleTimeRed">13:00</p>
+                            <p class="mainBlock__first-scheduleProgrammRed">Новости (с субтитрами)</p>
+                            <p class="mainBlock__first-scheduleTime">14:00</p>
+                            <p class="mainBlock__first-scheduleProgramm">Давай поженимся</p>
+                            <p class="mainBlock__first-scheduleTime">15:00</p>
+                            <p class="mainBlock__first-scheduleProgramm">Другие новости</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainBlock__second">
+                    <div class="mainBlock__second-tvLogo">
+                        <img class="mainBlock__second-img" src="img/2x2.png" alt="2x2ChannelLogo">
+                    </div>
+                    <div class="mainBlock__second-tvScheduleOsn">
+                        <p class="mainBlock__second-tvScheduleChannelName">2x2</p>
+                        <div class="mainBlock__second-tvSchedule">
+                            <p class="mainBlock__second-scheduleTimeRed">13:00</p>
+                            <p class="mainBlock__second-scheduleProgrammRed">МУЛЬТ ТВ. Сезон 4, 7 серия</p>
+                            <p class="mainBlock__second-scheduleTime">14:00</p>
+                            <p class="mainBlock__second-scheduleProgramm">ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</p>
+                            <p class="mainBlock__second-scheduleTime">15:00</p>
+                            <p class="mainBlock__second-scheduleProgramm">БУРДАШЕВ. Сезон 1, 20 серия</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainBlock__third">
+                    <div class="mainBlock__third-tvLogo">
+                        <img class="mainBlock__third-img" src="img/rbc.png" alt="RBK-ChannelLogo">
+                    </div>
+                    <div class="mainBlock__third-tvScheduleOsn">
+                        <p class="mainBlock__third-tvScheduleChannelName">РБК</p>
+                        <div class="mainBlock__third-tvSchedule">
+                            <p class="mainBlock__third-scheduleTimeRed">13:00</p>
+                            <p class="mainBlock__third-scheduleProgrammRed">ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</p>
+                            <p class="mainBlock__third-scheduleTime">14:00</p>
+                            <p class="mainBlock__third-scheduleProgramm">ДЕНЬ. Главные темы</p>
+                            <p class="mainBlock__third-scheduleTime">15:00</p>
+                            <p class="mainBlock__third-scheduleProgramm">Главные новости</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainBlock__fourth">
+                    <div class="mainBlock__fourth-tvLogo">
+                        <img class="mainBlock__fourth-img" src="img/amedia.png" alt="AmediaPremium-ChannelLogo">
+                    </div>
+                    <div class="mainBlock__fourth-tvScheduleOsn">
+                        <p class="mainBlock__fourth-tvScheduleChannelName">AMEDIA PREMIUM</p>
+                        <div class="mainBlock__fourth-tvSchedule">
+                            <p class="mainBlock__fourth-scheduleTimeRed">13:00</p>
+                            <p class="mainBlock__fourth-scheduleProgrammRed">Клиент всегда мёртв</p>
+                            <p class="mainBlock__fourth-scheduleTime">14:00</p>
+                            <p class="mainBlock__fourth-scheduleProgramm">Голодные игры: Сойка-пересмешница. Часть I</p>
+                            <p class="mainBlock__fourth-scheduleTime">15:00</p>
+                            <p class="mainBlock__fourth-scheduleProgramm">Секс в большом городе</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scrollbar">
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="container footer-container">
+            <img src="img/logo.svg" alt="logo">
+            <div class="footer__info">
+                <p class="footer__info-p">426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)</p>
+                <p class="footer__info-p">+7 (3412) 93-88-61, 43-29-29</p>
+                <a class="footer__info-a" href="https://htc-cs.ru">htc-cs.ru</a>
+            </div>
+        </div>
+    </footer>
+    <div class="modalAuth" id="modalAuth" role="dialog" aria-modal="true" aria-labelledby="modalAuthTitle">
+        <label for="authToggle" class="modalAuth-overlay"></label>
+        <div class="modalAuth-content">
+            <h1 class="modalAuth-content_Header" id="modalAuthTitle">Вход</h1>
+            <form class="modalAuth-form" action="#" method="post">
+                <div class="modalAuth-content__login">
+                    <input class="modalAuth-content__login-inp" type="text" name="login" placeholder="Логин">
+                </div>
+                <div class="modalAuth-content__password">
+                    <input class="modalAuth-content__password-inp" type="password" name="password" placeholder="Пароль">
+                </div>
+                <div class="custom-checkbox">
+                    <label>
+                        <input type="checkbox" name="agree">
+                        Запомнить меня
+                    </label>
+                </div>
+                <div class="modalAuth-buttons">
+                    <button class="modalAuth-btn modalAuth-btn--primary" type="submit">Войти</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
